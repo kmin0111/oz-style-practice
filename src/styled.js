@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 
-// 1. SCSS의 @mixin이랑 똑같은 역할을 하는 놈들이에요 (공통 스타일)
 const flex = (direction = 'row', justify = 'start', align = 'stretch', gap = '0', wrap = 'nowrap') => css`
   display: flex;
   flex-direction: ${direction};
@@ -15,11 +14,9 @@ const font = (size, weight = 400) => css`
   font-weight: ${weight};
 `;
 
-// 2. 변수 정의
 const TAG_COLOR = '#d7fa00';
 const GRAY = 'rgb(160, 160, 160)';
 
-// 3. 컴포넌트 제작 시작!
 export const HeaderContainer = styled.header`
   ${flex('row', 'space-between', 'center')}
   padding: 20px;
